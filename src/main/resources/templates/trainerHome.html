@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;   
+          
+        }
+
+        .navbar {
+            background-color: #e7e064;
+        }
+
+        .navbar-brand {
+            padding: 0 15px;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item {
+            padding: 0 15px;
+        }
+        
+        
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            animation: fade-in 1s;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">  
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">User</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container mt-5 text-center">
+        <h2 style="color: aliceblue; font-family: 'Times New Roman', Times, serif;color: white;">Welcome Trainer To Course Management..</h2>
+        <br><br><br><br>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <a href="/createCourse" class="btn btn-primary btn-block">Add Course</a>
+            </div>
+            <div class="col-md-4">
+                <a href="/addLesson" class="btn btn-success btn-block">Add Lesson</a>
+            </div>
+            <div class="col-md-4">
+                <a href="/showCourses" class="btn btn-info btn-block">View Course</a>
+            </div>
+        </div>
+    </div>
+    <!-- Link Bootstrap JS (Optional, for certain features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

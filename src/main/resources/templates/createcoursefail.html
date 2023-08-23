@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;   
+          
+        }
+
+        .navbar {
+            background-color: #e7e064;
+        }
+
+        .navbar-brand {
+            padding: 0 15px;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item {
+            padding: 0 15px;
+        }
+        
+        
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            animation: fade-in 1s;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">  
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">User</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5" >
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+				<h6 class="mb-4" style="color: red; font-family: 'Times New Roman', Times, serif; ">Fails To Create a  New Course!,try again</h6>
+                <h2 class="mb-4" style="color: aliceblue; font-family: 'Times New Roman', Times, serif;">Create a New Course!</h2>
+                <form class="control" style="font-weight: bold ;" action="/nav/addcourse" method="POST" > >
+                    <div class="mb-3">
+                        <label for="name" class="form-label" style="color: aliceblue; font-family: 'Times New Roman', Times, serif; font-size: x-large;">Course Id</label>
+                        <input type="text"class="form-control" id="courseid" name="courseid" required placeholder="Enter the course Id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label" style="color: aliceblue; font-family: 'Times New Roman', Times, serif; font-size: x-large;">Course Name</label>
+                        <input type="text"  class="form-control" id="coursename" name="coursename" required placeholder="Enter the course Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label" style="color: aliceblue; font-family: 'Times New Roman', Times, serif; font-size: x-large;">Course Price</label>
+                        <input type="password"  class="form-control" id="courseprice" name="courseprice" required placeholder="Enter the course Price">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-primary:hover" >Create Course</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Link Bootstrap JS (Optional, for certain features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
